@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Change bg color every 2 seconds</title>
+</head>
+<body>
+<h1>Background Color is being changed every 2 seconds</h1>
+<script>
+setInterval(
+function () {
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#"+randomColor;
+},2000);
+
+function CopyToLabel()
+{
+        var txtName = document.getElementById("txtName");
+        var lblName = document.getElementById("lblName");
+        setTimeout(function(){lblName.innerHTML = txtName.value;},3000);
+}
+</script>
+
+<input type="text" id="txtName"/>
+<input type="button" id = "btnCopy" value="Copy To Label" onclick = "CopyToLabel()" />
+<hr />
+<label id = "lblName" style="font-size:32px"></label>
+
+
+</body>
+</html>

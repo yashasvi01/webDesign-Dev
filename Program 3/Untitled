@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Question 3</title>
+<script>
+    function changeBodyBg(color)
+    {
+        document.body.style.background = color;
+    }
+</script>
+</head>
+<body>
+
+  <FORM name="FeedBack Form">
+    <CENTER><h1>FeedBack Form</h1></CENTER>
+    <br>
+    <br>
+     <LABEL>Name of Person: </LABEL>
+               <INPUT type="text" id="name" maxlength="50" size="25"><BR><br>
+     <LABEL>Age of Person: </LABEL>
+               <INPUT type="text" id="age" size="3"><BR><br>
+
+     <LABLE >Category:</LABLE>
+<select  >
+  <option >Faculty</option>
+  <option >Student</option>
+  <option >Parent</option>
+  <option >Alumini</option>
+</select><br>
+
+<LABEL>FeedBack</LABEL><br><br>
+
+     <INPUT type ="checkbox">Excellent<BR>
+       <INPUT type ="checkbox">Good<BR>
+         <INPUT type ="checkbox">Average<BR>
+           <INPUT type ="checkbox">Poor<BR><br>
+
+     <INPUT type="button" value="Submit">  <INPUT type="button" value="Reset">
+
+  </FORM>
+
+</body>
+</html>
